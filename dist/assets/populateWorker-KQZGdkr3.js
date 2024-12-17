@@ -1,0 +1,1 @@
+(function(){"use strict";onmessage=function(l){const{imageData:u,rowCount:a,colCount:o,cellW:e,cellH:n}=l.data,c=[];for(let t=0;t<a;t++)for(let s=0;s<o;s++){const i=s*e,r=t*n;c.push({gridIndex:t*o+s,x:i,y:r,width:e,height:n})}postMessage({cells:c,imageData:u})}})();
